@@ -1,0 +1,47 @@
+.nav {
+  background-color: #64748b;
+  display: flex;
+  padding: 1.25rem;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.linkContainer {
+  display: flex;
+}
+
+.link {
+  border-right: 2px solid;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.link:first-child {
+  border-left: 2px solid;
+}
+
+.linkUnderline {
+  background-color: white;
+  height: 3px;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.link:hover .linkUnderline {
+  width: 100%;
+}
+
+.cartButton {
+  font-size: 1.125rem;
+  border: 2px solid;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: white;
+  color: #0f172a;
+  transition: transform 0.3s;
+}
+
+.cartButton:hover {
+  transform: scale(1.1);
+}

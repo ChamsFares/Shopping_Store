@@ -1,0 +1,52 @@
+.container {
+  background-color: #f8fafc;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0.75rem 0;
+  color: #1e293b;
+}
+
+.productGrid {
+  display: grid;
+  gap: 0.625rem;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  padding: 1rem;
+}
+
+.loadingContainer {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.spinner {
+  border: 8px solid #e2e8f0;
+  border-top: 8px solid #2563eb;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  animation: spin 1s linear infinite;
+  margin: 1.25rem auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.errorMessage {
+  text-align: center;
+  color: #ef4444;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
